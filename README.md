@@ -18,10 +18,10 @@ Part of the Open ICR Project - http://opensource.newmediaist.com/open-source-icr
             <li>Character image is scaled to a standard set of dimensions</li>
             <li>Character image is thinned using Zhang Suen algo</li>
             <li>White space padding added around the image to prepare for next stage</li>
-            <li>Ersion is added to the character image to join small gaps</li>
+            <li>Erosion is added to the character image to join small gaps</li>
           </ol>
           <h3>Usage</h3>
           <p>
           <strong>python preprocessor.py -o original.png-d ~path_for_output\filename.png</strong>
           </p>
-          <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p
+          <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>
