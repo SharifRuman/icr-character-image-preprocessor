@@ -82,11 +82,11 @@ def remove_line(box_bw,line_thickness):
 def preprocessor(original, destination, noise_removal,remove_border_size):
     original_image = cv2.imread(original, cv2.CV_LOAD_IMAGE_GRAYSCALE)    #reading captured (scanned image)
     if original_image==None:
-        print 'original image file = ',original,'  cant be read!!! Check File name.'
+        print ('original image file = ',original,'  cant be read!!! Check File name.')
         return_value=None
         return return_value
     else:
-        print 'original file = ',original,'  is read'
+        print ('original file = ',original,'  is read')
     
 
     #image thresholding to make binary image of the box
@@ -152,14 +152,14 @@ if __name__ == '__main__':
     results = parser.parse_args() 
     # Argument Parsing ENDS........................................................................
 
-    print 'Original Image =', results.original
-    print 'Destination Image =', results.destination
-    print 'noise remove?= ', results.noise_removal
-    print 'Border removal size= ', results.remove_border_size
+    print ('Original Image =', results.original)
+    print ('Destination Image =', results.destination)
+    print ('noise remove?= ', results.noise_removal)
+    print ('Border removal size= ', results.remove_border_size)
 
     # we will write the extracted boxes in the following directory
     #directory='boxes'
-    print results.destination+'!!!\n'
+    print (results.destination+'!!!\n')
     #if not os.path.exists(os.path.dirname(results.destinaton)):
     #    os.makedirs(os.path.dirname(results.destinaton))
 
